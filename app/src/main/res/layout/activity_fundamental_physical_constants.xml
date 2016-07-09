@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.gmd.referenceapplication.FundamentalPhysicalConstants">
+
+    <android.support.v7.widget.Toolbar
+    android:id="@+id/my_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    android:elevation="4dp"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+
+    />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/my_toolbar"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Common Constants"
+            android:id="@+id/common_button"
+            android:layout_weight="0.06"
+            android:layout_gravity="center_horizontal"
+            android:onClick="goToCommon"
+
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Universal Constants"
+            android:id="@+id/universal_button"
+            android:layout_weight="0.06"
+            android:layout_gravity="center_horizontal"
+
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Electromagnetic Constants"
+            android:id="@+id/electromagnetic_button"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.06"
+            android:onClick="goToElectro"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Atomic and Nuclear Constants"
+            android:id="@+id/atomic_button"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.06"
+            android:onClick="goToAtomic"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Chemical Constants"
+            android:id="@+id/chemical_button"
+            android:onClick="goToChem"
+            android:layout_weight="0.06"
+
+            />
+        <!--android:text="Chemical Constants"-->
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

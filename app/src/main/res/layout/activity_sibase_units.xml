@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    tools:context="com.gmd.referenceapplication.SIBaseUnits">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+
+        />
+
+    <TextView
+        android:text="Definitions of the SI Base Units"
+        android:textStyle="bold"
+        android:id="@+id/header"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_height="50dp"
+        android:layout_width="match_parent" />
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:columnCount="3"
+        >
+
+
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            >
+
+
+
+            <TextView
+
+
+                android:text="Unit of length"
+                android:textColor="@color/darkGrey"
+                android:id="@+id/name1"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="@dimen/smallText"
+                android:layout_column="0"
+                android:layout_height="match_parent"
+                android:layout_width="0dp" />
+
+
+            <View
+                android:layout_width="2dp"
+                android:background="@color/slightlyDarkerLightGray"
+                android:layout_height="match_parent"/>
+
+            <TextView
+
+
+                android:text="meter"
+                android:id="@+id/unit1"
+                android:textColor="@color/darkGrey"
+                android:textSize="@dimen/smallText"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_column="1"
+                android:layout_height="match_parent"
+                android:layout_width="0dp" />
+
+            <View
+                android:layout_width="2dp"
+                android:background="@color/slightlyDarkerLightGray"
+                android:layout_height="match_parent"/>
+
+
+            <TextView
+
+
+                android:text="The meter is the length of the path travelled by light in vacuum during a time interval of 1/299 792 458 of a second."                android:id="@+id/definition1"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:textSize="@dimen/smallText"
+                android:layout_column="2"
+                android:layout_height="match_parent"
+                android:layout_width="0dp" />
+
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            >
+
+
+
+            <TextView
+
+
+                android:text="Unit of mass"
+                android:textColor="@color/darkGrey"
+                android:id="@+id/name2"
+                android:textSize="@dimen/smallText"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_column="0"
+                android:layout_height="match_parent"
+                android:layout_width="0dp" />
+
+
+            <View
+                android:layout_width="2dp"
+                android:background="@color/slightlyDarkerLightGray"
+                android:layout_height="match_parent"/>
+
+            <TextView
+
+
+                android:text="kilogram"
+                android:textColor="@color/darkGrey"
+                android:id="@+id/unit2"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="@dimen/smallText"
+                android:layout_column="1"
+                android:layout_height="match_parent"
+                android:layout_width="0dp" />
+
+            <View
+                android:layout_width="2dp"
+                android:background="@color/slightlyDarkerLightGray"
+                android:layout_height="match_parent"/>
+
+
+            <TextView
+
+
+                android:text="The kilogram is the unit of mass; it is equal to the mass of the international prototype of the kilogram."                android:id="@+id/definition2"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:layout_column="2"
+                android:textSize="@dimen/smallText"
+                android:layout_height="match_parent"
+                android:layout_width="0dp" />
+
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            >
+
+
+
+            <TextView
+
+
+                android:text="Unit of time"
+                android:id="@+id/name3"
+                android:textSize="@dimen/smallText"
+                android:textColor="@color/darkGrey"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_column="0"
+                android:layout_height="match_parent"
+                android:layout_width="0dp" />
+
+
+            <View
+                android:layout_width="2dp"
+                android:background="@color/slightlyDarkerLightGray"
+                android:layout_height="match_parent"/>
+
+            <TextView
+
+
+                android:text="second"
+                android:textSize="@dimen/smallText"
+                android:textColor="@color/darkGrey"
+                android:id="@+id/unit3"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_column="1"
+                android:layout_height="match_parent"
+                android:layout_width="0dp" />
+
+            <View
+                android:layout_width="2dp"
+                android:background="@color/slightlyDarkerLightGray"
+                android:layout_height="match_parent"/>
+
+
+            <TextView
+
+
+                android:text="The second is the duration of 9 192 631 770 periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the cesium 133 atom."                android:id="@+id/definition3"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:layout_column="2"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/smallText"
+                android:layout_width="0dp" />
+
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            >
+
+
+
+            <TextView
+
+
+                android:text="Unit of electric current"
+                android:id="@+id/name4"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="@dimen/smallText"
+                android:layout_column="0"
+                android:layout_height="match_parent"
+                android:textColor="@color/darkGrey"
+                android:layout_width="0dp" />
+
+
+            <View
+                android:layout_width="2dp"
+                android:background="@color/slightlyDarkerLightGray"
+                android:layout_height="match_parent"/>
+
+            <TextView
+
+
+                android:text="ampere"
+                android:id="@+id/unit4"
+                android:gravity="center"
+                android:textSize="@dimen/smallText"
+                android:textColor="@color/darkGrey"
+                android:layout_weight="1"
+                android:layout_column="1"
+                android:layout_height="match_parent"
+                android:layout_width="0dp" />
+
+            <View
+                android:layout_width="2dp"
+                android:background="@color/slightlyDarkerLightGray"
+                android:layout_height="match_parent"/>
+
+
+            <TextView
+
+
+                android:text="The ampere is that constant current which, if maintained in two straight parallel conductors of infinite length, of negligible circular cross-section, and placed 1 meter apart in vacuum, would produce between these conductors a force equal to 2 x 10-7 newton per meter of length."                android:id="@+id/definition4"
+                android:gravity="center"
+                android:textSize="@dimen/smallText"
+                android:layout_weight="2"
+                android:layout_column="2"
+                android:layout_height="match_parent"
+                android:layout_width="0dp" />
+
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            >
+
+
+
+            <TextView
+
+
+                android:text="Unit of thermodynamic temperature"
+                android:id="@+id/name5"
+                android:gravity="center"
+                android:textSize="@dimen/smallText"
+                android:layout_weight="1"
+                android:layout_column="0"
+                android:textColor="@color/darkGrey"
+                android:layout_height="match_parent"
+                android:layout_width="0dp" />
+
+
+            <View
+                android:layout_width="2dp"
+                android:background="@color/slightlyDarkerLightGray"
+                android:layout_height="match_parent"/>
+
+            <TextView
+
+
+                android:text="kelvin"
+                android:id="@+id/unit5"
+                android:textSize="@dimen/smallText"
+                android:textColor="@color/darkGrey"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_column="1"
+                android:layout_height="match_parent"
+                android:layout_width="0dp" />
+
+            <View
+                android:layout_width="2dp"
+                android:background="@color/slightlyDarkerLightGray"
+                android:layout_height="match_parent"/>
+
+
+            <TextView
+
+
+                android:text="The kelvin, unit of thermodynamic temperature, is the fraction 1/273.16 of the thermodynamic temperature of the triple point of water."                android:id="@+id/definition5"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:layout_column="2"
+                android:textSize="@dimen/smallText"
+                android:layout_height="match_parent"
+                android:layout_width="0dp" />
+
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            >
+
+
+
+            <TextView
+
+
+                android:text="Unit of amount of substance"
+                android:id="@+id/name6"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/darkGrey"
+                android:textSize="@dimen/smallText"
+                android:layout_column="0"
+                android:layout_height="match_parent"
+                android:layout_width="0dp" />
+
+
+            <View
+                android:layout_width="2dp"
+                android:background="@color/slightlyDarkerLightGray"
+                android:layout_height="match_parent"/>
+
+            <TextView
+
+
+                android:text="mole"
+                android:id="@+id/unit6"
+                android:textSize="@dimen/smallText"
+                android:gravity="center"
+                android:textColor="@color/darkGrey"
+                android:layout_weight="1"
+                android:layout_column="1"
+                android:layout_height="match_parent"
+                android:layout_width="0dp" />
+
+            <View
+                android:layout_width="2dp"
+                android:background="@color/slightlyDarkerLightGray"
+                android:layout_height="match_parent"/>
+
+
+            <TextView
+
+
+                android:text="1. The mole is the amount of substance of a system which contains as many elementary entities as there are atoms in 0.012 kilogram of carbon 12; its symbol is mol.
+
+                \n2. When the mole is used, the elementary entities must be specified and may be atoms, molecules, ions, electrons, other particles, or specified groups of such particles."
+                android:id="@+id/definition6"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:layout_column="2"
+                android:textSize="@dimen/smallText"
+                android:layout_height="match_parent"
+                android:layout_width="0dp" />
+
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            >
+
+
+
+            <TextView
+
+
+                android:text="Unit of luminous intensity"
+                android:id="@+id/name7"
+                android:textSize="@dimen/smallText"
+                android:textColor="@color/darkGrey"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_column="0"
+                android:layout_height="match_parent"
+                android:layout_width="0dp" />
+
+
+            <View
+                android:layout_width="2dp"
+                android:background="@color/slightlyDarkerLightGray"
+                android:layout_height="match_parent"/>
+
+            <TextView
+
+
+                android:text="candela"
+                android:id="@+id/unit7"
+                android:textColor="@color/darkGrey"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="@dimen/smallText"
+                android:layout_column="1"
+                android:layout_height="match_parent"
+                android:layout_width="0dp" />
+
+            <View
+                android:layout_width="2dp"
+                android:background="@color/slightlyDarkerLightGray"
+                android:layout_height="match_parent"/>
+
+
+            <TextView
+
+
+                android:text="The candela is the luminous intensity, in a given direction, of a source that emits monochromatic radiation of frequency 540 x 1012 hertz and that has a radiant intensity in that direction of 1/683 watt per steradian."                android:id="@+id/definition7"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:textSize="@dimen/smallText"
+                android:layout_column="2"
+                android:layout_height="match_parent"
+                android:layout_width="0dp" />
+
+
+
+
+        </TableRow>
+
+
+
+
+
+    </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

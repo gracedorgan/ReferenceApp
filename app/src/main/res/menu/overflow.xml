@@ -1,0 +1,49 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ReferenceApplicat="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/home"
+        android:orderInCategory="100"
+        app:showAsAction = "ifRoom"
+        android:icon="@mipmap/nist_logo"
+        android:title="home"/>
+
+    <item
+        android:id="@+id/search"
+        android:orderInCategory="100"
+        app:showAsAction = "ifRoom"
+        android:icon="@drawable/search_icon"
+        android:title="Search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        />
+
+    <item
+        android:id="@+id/joes_rules"
+        android:title="Joe's Rules"
+        app:showAsAction = "never"/>
+
+    <item
+        android:id="@+id/constants"
+        android:title="Constants"
+        app:showAsAction = "never"/>
+
+    <item
+        android:id="@+id/water_properties"
+        android:title="Water Properties"
+        app:showAsAction = "never"/>
+
+    <item
+        android:id="@+id/base_units"
+        android:title="SI Base Units"
+        app:showAsAction = "never"/>
+
+    <item
+        android:id="@+id/links"
+        android:title="Reference Links"
+        app:showAsAction = "never"/>
+
+
+
+
+</menu>

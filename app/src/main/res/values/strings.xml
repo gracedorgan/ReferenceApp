@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Reference Application</string>
+    <string name="search_hint">Search constants, rules, and properties of water  </string>
+    <string name="nistConstants"><a href="http://physics.nist.gov/cuu/Units/index.html">The NIST Reference on Constants, Units, and Uncertainty</a></string>
+    <string name="welcome">Welcome to <b>Android</b>!</string>
+    <string name="uncertaintyArticle"><a href="https://en.wikipedia.org/wiki/Uncertainty">Scientific Uncertainty</a></string>
+
+</resources>
