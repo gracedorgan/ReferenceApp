@@ -64,7 +64,6 @@ public class SearchableActivity extends AppCompatActivity {
             Cursor c = db.getWordMatches(query, null);
             doSearch(c);
             Log.e("Search Operation", "Database searched");
-
         }
     }
 

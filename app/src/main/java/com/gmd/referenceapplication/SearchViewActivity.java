@@ -1,6 +1,7 @@
 package com.gmd.referenceapplication;
 
 import android.app.SearchManager;
+import android.app.SearchableInfo;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
@@ -45,14 +46,11 @@ public class SearchViewActivity extends AppCompatActivity {
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
-                //search button is pressed
 
-//                if( ! searchView.isIconified()) {
-//                    searchView.setIconified(true);
-//                }
-//                myActionMenuItem.collapseActionView();
-
-                Log.e("search", "text submitted");
+                Intent intent = new Intent(SearchViewActivity.this, SearchableActivity.class);
+                intent.setAction(Intent.ACTION_SEARCH);
+                intent.putExtra(SearchManager.QUERY, query);
+                startActivity(intent);
 
                 return true;
             }
@@ -70,8 +68,10 @@ public class SearchViewActivity extends AppCompatActivity {
                 (SearchManager) getSystemService(Context.SEARCH_SERVICE);
         searchView =
                 (SearchView) menu.findItem(R.id.search).getActionView();
-        searchView.setSearchableInfo(
-                searchManager.getSearchableInfo(getComponentName()));
+
+        SearchableInfo searchableInfo = searchManager.getSearchableInfo(getComponentName());
+        searchView.setSearchableInfo(searchableInfo);
+
 
         return true;
     }
